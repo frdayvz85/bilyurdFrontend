@@ -86,3 +86,13 @@ body {
 .nav-lists li:hover a {
     color:black
 }
+#register {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:lightcoral;
+}
+#register label {
+    display:block;
+}
