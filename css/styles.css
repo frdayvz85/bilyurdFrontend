@@ -86,6 +86,7 @@ body {
 .nav-lists li:hover a {
     color:black
 }
+<<<<<<< HEAD
 
 #login {
     display: flex;
@@ -99,4 +100,15 @@ body {
 }
 .form-group {
     margin:25px 0 0 0;
+=======
+#register {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:lightcoral;
+}
+#register label {
+    display:block;
+>>>>>>> register
 }
