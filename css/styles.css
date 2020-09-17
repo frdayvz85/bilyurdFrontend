@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+font-family: 'Grandstander', cursive;
+font-family: 'Heebo', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Lato', sans-serif;
+*/
+:root {
+    --primary-clr:#fff;
+}
+body {
+    margin:10vh 0 0 0;
+    min-height: 100vh;
+    font-family: 'Inconsolata', monospace;
+}
+.main-container {
+    width:80%;
+    margin:0 auto;
+}
+/* navbar */
+#header {
+    background-color: coral;
+    position: fixed;
+    width:100%;
+    top: 0;
+    left:0;
+}
+.navbar {
+    width:100%;
+    height: 10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo .logo-text {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 900;
+    text-decoration: none;
+    color:#fff;
+}
+.hamburger .fa {
+    color:#fff;
+    font-size: 1.125rem;
+}
+.hamburger .fa-times {
+    display:none;
+}
+.nav-lists {
+    position: absolute;
+    top: 7vh;
+    width: 100%;
+    min-height: 100vh;
+    background-color: coral;
+    z-index: 999;
+    left: -100%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    transition:all 0.4s ease-in-out;
+}
+.nav-lists.active {
+    left: 0;
+}
+.nav-lists li {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 250ms ease-in-out;
+}
+.nav-lists li a {
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Grandstander', cursive;
+    padding: 0.5rem;
+}
+.nav-lists li:hover {
+    background-color: blanchedalmond;
+}
+.nav-lists li:hover a {
+    color:black
+}
+/* login */
+#login {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: lightcoral;
+}
+#login label {
+    display:block;
+}
